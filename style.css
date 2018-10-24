@@ -1,0 +1,63 @@
+.navbar {
+    margin: 8px;
+}
+
+.news-container {
+    margin: 0 25%;
+}
+
+.logo {
+    height: 24px;
+    float: left;
+    margin-right: 10px;
+}
+
+.modal-body img {
+    width: 100%;
+}
+
+.like-button {
+    position: absolute;
+    transform: translateX(4px);
+}
+
+@keyframes like-scale {
+    0% {
+        background-color: #5cb85c;
+        color: white;
+        transform: translateX(4px) scale(1.1);
+    }
+    50% {
+        transform: translateX(4px) scale(1.4);
+    }
+    100% {
+        transform: translateX(4px);
+    }
+}
+
+.like-button:hover {
+    background-color: #5cb85c;
+    color: white;
+    transform: translateX(4px) scale(1.1);
+    transition: all 0.1s ease-in;
+}
+
+.glyphicon-thumbs-up {
+    /*osition: absolute;*/
+    transform: translateX(4px);
+}
+
+@keyframes icon-scale {
+    0% {
+        transform: translateX(4px) scale(1.0);
+    }
+    33% {
+        transform: translateX(4px) scale(1.5) rotateZ(30deg);
+    }
+    66% {
+        transform: translateX(4px) scale(1.5) rotateZ(-30deg);
+    }
+    100% {
+        transform: translateX(4px);
+    }
+}
